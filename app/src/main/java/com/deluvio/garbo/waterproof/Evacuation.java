@@ -26,6 +26,10 @@ public class Evacuation extends AppCompatActivity {
         if (v.getId() == R.id.home) {
             i = new Intent(this, HomePage.class);
             startActivity(i);
+        }
+        else if (v.getId() == R.id.emergencyhotline) {
+            i = new Intent(this, EmergencyHotline.class);
+            startActivity(i);
         } else if (v.getId() == R.id.makatigm) {
             i = new Intent(getIntent().ACTION_VIEW);
             i.setData(Uri.parse("http://maps.google.com/maps?q=loc:" + 11.967203 + "," + 121.925502));

@@ -41,6 +41,10 @@ public class EmergencyHotline extends AppCompatActivity {
             i = new Intent(this, HomePage.class);
             startActivity(i);
         }
+        if (v.getId() == R.id.evacuationcenter) {
+            i = new Intent(this, Evacuation.class);
+            startActivity(i);
+        }
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 if (arg0.getId() == R.id.callndrrmc) {
