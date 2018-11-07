@@ -34,6 +34,41 @@ public class EmergencyHotline extends AppCompatActivity {
                     callIntent.setData(Uri.parse("tel:9111406"));
                     startActivity(callIntent);
                 }
+                else if (arg0.getId() == R.id.callmmdam) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:9111406"));
+                    startActivity(callIntent);
+                }
+                else if (arg0.getId() == R.id.calldotc) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:9111406"));
+                    startActivity(callIntent);
+                }
+                else if (arg0.getId() == R.id.calldoh) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:9111406"));
+                    startActivity(callIntent);
+                }
+                else if (arg0.getId() == R.id.callmakati) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:9111406"));
+                    startActivity(callIntent);
+                }
+                else if (arg0.getId() == R.id.callpasig) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:9111406"));
+                    startActivity(callIntent);
+                }
+                else if (arg0.getId() == R.id.callmandaluyong) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:9111406"));
+                    startActivity(callIntent);
+                }
+                else if (arg0.getId() == R.id.callcainta) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:9111406"));
+                    startActivity(callIntent);
+                }
                 if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     return;
