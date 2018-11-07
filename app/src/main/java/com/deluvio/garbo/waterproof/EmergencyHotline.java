@@ -12,6 +12,13 @@ import android.widget.Button;
 
 public class EmergencyHotline extends AppCompatActivity {
     private Button button;
+    private Button button1;
+    private Button button2;
+    private Button button3;
+    private Button button4;
+    private Button button5;
+    private Button button6;
+    private Button button7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +27,13 @@ public class EmergencyHotline extends AppCompatActivity {
         Intent i = new Intent(this, CustomService.class);
         startService(i);
         button = (Button) findViewById(R.id.callndrrmc);
+        button1 = (Button) findViewById(R.id.callmmdam);
+        button2 = (Button) findViewById(R.id.calldotc);
+        button3 = (Button) findViewById(R.id.calldoh);
+        button4 = (Button) findViewById(R.id.callmakati);
+        button5 = (Button) findViewById(R.id.callpasig);
+        button6 = (Button) findViewById(R.id.callmandaluyong);
+        button7 = (Button) findViewById(R.id.callcainta);
     }
     public void process(View v) {
         Intent i = null, chooser = null;
@@ -31,42 +45,112 @@ public class EmergencyHotline extends AppCompatActivity {
             public void onClick(View arg0) {
                 if (arg0.getId() == R.id.callndrrmc) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:029111406"));
                     startActivity(callIntent);
                 }
-                else if (arg0.getId() == R.id.callmmdam) {
+                if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+            }
+        });
+       /* ------------------------------------------im so---------------------------------------------------- */
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                if (arg0.getId() == R.id.callmmdam) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:028824154"));
                     startActivity(callIntent);
                 }
-                else if (arg0.getId() == R.id.calldotc) {
+                if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+            }
+        });
+        /* -------------------------------------------fucked up--------------------------------------------------- */
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                if (arg0.getId() == R.id.calldotc) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:027890"));
                     startActivity(callIntent);
                 }
-                else if (arg0.getId() == R.id.calldoh) {
+                if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+            }
+        });
+        /* -------------------------------------------baby--------------------------------------------------- */
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                if (arg0.getId() == R.id.calldoh) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:027111001"));
                     startActivity(callIntent);
                 }
-                else if (arg0.getId() == R.id.callmakati) {
+                if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+            }
+        });
+        /* -------------------------------------------hello--------------------------------------------------- */
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                if (arg0.getId() == R.id.callmakati) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:028998928"));
                     startActivity(callIntent);
                 }
-                else if (arg0.getId() == R.id.callpasig) {
+                if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+            }
+        });
+        /* -------------------------------------------jaja--------------------------------------------------- */
+        button5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                if (arg0.getId() == R.id.callpasig) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:026430000"));
                     startActivity(callIntent);
                 }
-                else if (arg0.getId() == R.id.callmandaluyong) {
+                if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+            }
+        });
+        /* -------------------------------------------i love you--------------------------------------------------- */
+        button6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                if (arg0.getId() == R.id.callmandaluyong) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:025332225"));
                     startActivity(callIntent);
                 }
-                else if (arg0.getId() == R.id.callcainta) {
+                if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+
+            }
+        });
+        /* -------------------------------------------so much--------------------------------------------------- */
+        button7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                if (arg0.getId() == R.id.callcainta) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9111406"));
+                    callIntent.setData(Uri.parse("tel:026460044"));
                     startActivity(callIntent);
                 }
                 if (ActivityCompat.checkSelfPermission(EmergencyHotline.this,

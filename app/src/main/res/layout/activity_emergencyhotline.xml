@@ -193,6 +193,7 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
                         android:layout_marginTop="36dp"
+                        android:onClick="process"
                         android:text="Call"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -226,6 +227,7 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
                         android:layout_marginTop="36dp"
+                        android:onClick="process"
                         android:text="Call"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/guideline2" />
@@ -307,6 +309,7 @@
                         android:layout_marginEnd="28dp"
                         android:layout_marginRight="28dp"
                         android:layout_marginTop="36dp"
+                        android:onClick="process"
                         android:text="Call"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -340,6 +343,7 @@
                         android:layout_marginEnd="28dp"
                         android:layout_marginRight="28dp"
                         android:layout_marginTop="36dp"
+                        android:onClick="process"
                         android:text="Call"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/guideline3" />
@@ -396,6 +400,7 @@
                         android:layout_marginEnd="28dp"
                         android:layout_marginRight="28dp"
                         android:layout_marginTop="36dp"
+                        android:onClick="process"
                         android:text="Call"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -429,6 +434,7 @@
                         android:layout_marginEnd="28dp"
                         android:layout_marginRight="28dp"
                         android:layout_marginTop="36dp"
+                        android:onClick="process"
                         android:text="Call"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/guideline4" />
