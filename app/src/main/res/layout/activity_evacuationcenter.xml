@@ -48,10 +48,21 @@
                         android:id="@+id/home"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:onClick="process"
-                        android:text="Button"
-                        tools:layout_editor_absoluteX="166dp"
-                        tools:layout_editor_absoluteY="9dp" />
+                        android:text="Home"
+                        app:layout_constraintTop_toTopOf="@+id/metromanila"
+                        tools:layout_editor_absoluteX="109dp" />
+
+                    <Button
+                        android:id="@+id/emergencyhotline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:onClick="process"
+                        android:text="Emergency"
+                        app:layout_constraintEnd_toEndOf="@+id/metromanila"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>
 
